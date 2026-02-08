@@ -3,7 +3,7 @@ import axios from "axios";
 function App() {
   const [message, setMessage] = useState("Loading...");
   useEffect(() => {
-    axios.get("http://localhost:8080/api/hello")
+    axios.get("https://demo-93mn.onrender.com/api/hello")
       .then(response => setMessage(response.data.message))
       .catch(error => setMessage("Error fetching data"));
   }, []);
